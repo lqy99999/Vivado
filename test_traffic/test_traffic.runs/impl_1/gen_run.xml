@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1563349686">
+  <File Type="ROUTE-PWR" Name="TrafficBoy_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TrafficBoy.tcl"/>
+  <File Type="BITSTR-BMM" Name="TrafficBoy_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="TrafficBoy_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TrafficBoy_reports.tcl"/>
+  <File Type="OPT-DCP" Name="TrafficBoy_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TrafficBoy_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TrafficBoy.hwdef"/>
+  <File Type="PWROPT-DCP" Name="TrafficBoy_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="TrafficBoy_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TrafficBoy_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TrafficBoy_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TrafficBoy_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TrafficBoy_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TrafficBoy_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="TrafficBoy.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TrafficBoy_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="TrafficBoy.bin"/>
+  <File Type="PHYSOPT-DCP" Name="TrafficBoy_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="TrafficBoy.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TrafficBoy_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TrafficBoy_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TrafficBoy_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TrafficBoy_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TrafficBoy_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TrafficBoy_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="TrafficBoy.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TrafficBoy_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="TrafficBoy.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TrafficBoy_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TrafficBoy_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="TrafficBoy.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="TrafficBoy_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TrafficBoy_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TrafficBoy_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TrafficBoy_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TrafficBoy_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TrafficBoy_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="TrafficBoy_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TrafficBoy.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TrafficBoy_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TrafficBoy_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TrafficBoy_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TrafficBoy_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TrafficBoy_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="TrafficBoy.bit"/>
+  <File Type="BITSTR-RBT" Name="TrafficBoy.rbt"/>
+  <File Type="BITSTR-NKY" Name="TrafficBoy.nky"/>
+  <File Type="BG-DRC" Name="TrafficBoy.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TrafficBoy"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/test.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/test.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

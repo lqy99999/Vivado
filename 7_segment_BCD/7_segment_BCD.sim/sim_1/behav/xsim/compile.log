@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_cathode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_cathode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/anode_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module anode_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/refresh_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module refresh_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sim_1/new/tb_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_1

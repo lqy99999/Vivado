@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sim_1/new/tb_1.v,1569552664,verilog,,,,tb_1,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1569226781,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_2.v,,clk_wiz_0,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1569226781,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_2.v,1569553237,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_cathode.v,,BCD_2,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_cathode.v,1569513738,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_control.v,,BCD_cathode,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/BCD_control.v,1569553321,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/anode_control.v,,BCD_control,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/anode_control.v,1569514039,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/refresh_counter.v,,anode_control,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sources_1/new/refresh_counter.v,1569518008,verilog,,C:/Users/liqingyan/vivado_test/7_segment_BCD/7_segment_BCD.srcs/sim_1/new/tb_1.v,,refresh_counter,,,../../../../7_segment_BCD.srcs/sources_1/ip/clk_wiz_0,,,,,

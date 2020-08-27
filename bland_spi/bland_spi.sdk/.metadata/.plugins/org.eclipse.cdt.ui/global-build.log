@@ -1,0 +1,1603 @@
+16:38:43 **** Build of project spi_1_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+16:38:55 **** Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:42:53 **** Auto Build of project spi_1_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+16:43:08 **** Clean-only build of configuration Debug for project spi_1 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  spi_1.elf.size  spi_1.elf
+ 
+16:43:08 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+00:18:22 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+00:20:20 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+00:20:55 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+00:21:41 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:18:03 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:55:6: error: conflicting types for 'print'
+ void print(char *str);
+      ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:231:9: note: previous declaration of 'print' was here
+ void    _EXFUN(print, (const char* ));
+         ^
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:63:13: warning: unused variable 'StatusReport' [-Wunused-variable]
+     uint8_t StatusReport = 0;
+             ^~~~~~~~~~~~
+../src/helloworld.c: In function 'SpiSingleWrite':
+../src/helloworld.c:81:10: warning: variable 'report' set but not used [-Wunused-but-set-variable]
+  uint8_t report = 0;
+          ^~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:101:19: error: 'SPI_DEVICE_ID' undeclared (first use in this function); did you mean 'XST_DEVICE_BUSY'?
+     SpiInitialize(SPI_DEVICE_ID, 0);
+                   ^~~~~~~~~~~~~
+                   XST_DEVICE_BUSY
+../src/helloworld.c:101:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:77:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/helloworld.c:59:21: warning: 'ConfigPtr' defined but not used [-Wunused-variable]
+ static XSpi_Config *ConfigPtr;
+                     ^~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+01:20:14 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:61:13: warning: unused variable 'StatusReport' [-Wunused-variable]
+     uint8_t StatusReport = 0;
+             ^~~~~~~~~~~~
+../src/helloworld.c: In function 'SpiSingleWrite':
+../src/helloworld.c:79:10: warning: variable 'report' set but not used [-Wunused-but-set-variable]
+  uint8_t report = 0;
+          ^~~~~~
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:75:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/helloworld.c:57:21: warning: 'ConfigPtr' defined but not used [-Wunused-variable]
+ static XSpi_Config *ConfigPtr;
+                     ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6244	    300	   3216	   9760	   2620	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+02:34:21 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:64:41: error: invalid operands to binary + (have 'char *' and 'char *')
+     print("Initialize: " + StatusReport + "\n\r");
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+../src/helloworld.c: In function 'SpiSingleWrite':
+../src/helloworld.c:93:8: warning: case label value exceeds maximum value for type
+        case XST_SPI_NO_SLAVE         : print( "XST_SPI_NO_SLAVE" );break;
+        ^~~~
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/helloworld.c:57:21: warning: 'ConfigPtr' defined but not used [-Wunused-variable]
+ static XSpi_Config *ConfigPtr;
+                     ^~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+02:35:45 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:70:8: warning: case label value exceeds maximum value for type
+        case XST_SPI_NO_SLAVE         : print( "XST_SPI_NO_SLAVE\n\r" );break;
+        ^~~~
+../src/helloworld.c: In function 'SpiSingleWrite':
+../src/helloworld.c:101:8: warning: case label value exceeds maximum value for type
+        case XST_SPI_NO_SLAVE         : print( "XST_SPI_NO_SLAVE" );break;
+        ^~~~
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/helloworld.c:57:21: warning: 'ConfigPtr' defined but not used [-Wunused-variable]
+ static XSpi_Config *ConfigPtr;
+                     ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6772	    300	   3216	  10288	   2830	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+02:42:44 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiInitialize':
+../src/helloworld.c:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+At top level:
+../src/helloworld.c:57:21: warning: 'ConfigPtr' defined but not used [-Wunused-variable]
+ static XSpi_Config *ConfigPtr;
+                     ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6804	    300	   3216	  10320	   2850	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+02:51:12 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:57:21: warning: 'ConfigPtr' defined but not used [-Wunused-variable]
+ static XSpi_Config *ConfigPtr;
+                     ^~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6724	    300	   3216	  10240	   2800	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+03:57:07 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_ConfTest':
+../src/helloworld.c:113:31: error: 'Spi' undeclared (first use in this function); did you mean 'XSpi'?
+  Status = XSpi_CfgInitialize(&Spi, ConfigPtr, ConfigPtr->BaseAddress);
+                               ^~~
+                               XSpi
+../src/helloworld.c:113:31: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+03:57:22 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_ConfTest':
+../src/helloworld.c:116:26: error: 'Spi' undeclared (first use in this function); did you mean 'XSpi'?
+  Status = XSpi_SelfTest(&Spi);
+                          ^~~
+                          XSpi
+../src/helloworld.c:116:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+03:57:26 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7916	    300	   3216	  11432	   2ca8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:08:25 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8112	    300	   3212	  11624	   2d68	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:09:41 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8164	    300	   3216	  11680	   2da0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:27:55 **** Auto Build of project spi_1_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/spi_v4_4/src"
+make -C microblaze_0/libsrc/spi_v4_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling spi"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+14:34:33 **** Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:34:39 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:34:47 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:38:30 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8164	    300	   3216	  11680	   2da0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:39:14 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:54:09 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiSingleWrite':
+../src/helloworld.c:94:41: warning: passing argument 2 of 'XSpi_Transfer' from incompatible pointer type [-Wincompatible-pointer-types]
+     report = XSpi_Transfer(&TempSensor, &WriteBuffer, NULL, sizeof(WriteBuffer));
+                                         ^
+In file included from ../src/helloworld.c:52:0:
+../../spi_1_bsp/microblaze_0/include/xspi.h:826:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'uint8_t (*)[3] {aka unsigned char (*)[3]}'
+ int XSpi_Transfer(XSpi *InstancePtr, u8 *SendBufPtr, u8 *RecvBufPtr,
+     ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8164	    300	   3216	  11680	   2da0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:54:47 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:55:50 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SpiSingleWrite':
+../src/helloworld.c:94:41: warning: passing argument 2 of 'XSpi_Transfer' from incompatible pointer type [-Wincompatible-pointer-types]
+     report = XSpi_Transfer(&TempSensor, &WriteBuffer, NULL, sizeof(WriteBuffer));
+                                         ^
+In file included from ../src/helloworld.c:52:0:
+../../spi_1_bsp/microblaze_0/include/xspi.h:826:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'uint8_t (*)[3] {aka unsigned char (*)[3]}'
+ int XSpi_Transfer(XSpi *InstancePtr, u8 *SendBufPtr, u8 *RecvBufPtr,
+     ^~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8164	    300	   3216	  11680	   2da0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:56:04 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8164	    300	   3216	  11680	   2da0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:56:29 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:57:32 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8200	    300	   3212	  11712	   2dc0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+14:58:57 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+14:59:28 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:34:29 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:107:1: error: unknown type name 'unit8_t'; did you mean 'uint8_t'?
+ unit8_t Spi_Read(uint16_t address)
+ ^~~~~~~
+ uint8_t
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:120:54: warning: passing argument 3 of 'XSpi_Transfer' makes pointer from integer without a cast [-Wint-conversion]
+     report = XSpi_Transfer(&TempSensor, WriteBuffer, ReadBuffer, sizeof(WriteBuffer));
+                                                      ^~~~~~~~~~
+In file included from ../src/helloworld.c:52:0:
+../../spi_1_bsp/microblaze_0/include/xspi.h:826:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'uint8_t {aka unsigned char}'
+ int XSpi_Transfer(XSpi *InstancePtr, u8 *SendBufPtr, u8 *RecvBufPtr,
+     ^~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+15:34:39 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:107:1: error: unknown type name 'unit8_t'; did you mean 'uint8_t'?
+ unit8_t Spi_Read(uint16_t address)
+ ^~~~~~~
+ uint8_t
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:113:29: error: invalid initializer
+     uint8_t ReadBuffer[1] = 0;
+                             ^
+../src/helloworld.c:132:12: warning: return makes integer from pointer without a cast [-Wint-conversion]
+     return ReadBuffer;
+            ^~~~~~~~~~
+../src/helloworld.c:132:12: warning: function returns address of local variable [-Wreturn-local-addr]
+make: *** [src/helloworld.o] Error 1
+15:34:52 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:107:1: error: unknown type name 'unit8_t'; did you mean 'uint8_t'?
+ unit8_t Spi_Read(uint16_t address)
+ ^~~~~~~
+ uint8_t
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:113:29: error: invalid initializer
+     uint8_t ReadBuffer[1] = 0;
+                             ^
+make: *** [src/helloworld.o] Error 1
+15:35:02 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:107:1: error: unknown type name 'unit8_t'; did you mean 'uint8_t'?
+ unit8_t Spi_Read(uint16_t address)
+ ^~~~~~~
+ uint8_t
+make: *** [src/helloworld.o] Error 1
+15:35:39 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8256	    300	   3212	  11768	   2df8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:37:13 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8660	    300	   3216	  12176	   2f90	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:38:45 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:43:50 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:10: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  uint8_t data = 0;
+          ^~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8652	    300	   3216	  12168	   2f88	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:44:29 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 70144 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+15:44:40 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:196:2: error: too many arguments to function 'print'
+  print("Status: %d", data);
+  ^~~~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:231:9: note: declared here
+ void    _EXFUN(print, (const char* ));
+         ^
+make: *** [src/helloworld.o] Error 1
+15:44:48 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:193:10: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+  uint8_t data = 0;
+          ^~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8652	    300	   3216	  12168	   2f88	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:45:57 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:46:22 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8684	    300	   3216	  12200	   2fa8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:46:56 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:47:31 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8344	    300	   3212	  11856	   2e50	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:47:57 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:48:12 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8688	    300	   3212	  12200	   2fa8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:48:51 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:49:16 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8344	    300	   3212	  11856	   2e50	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:49:38 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:50:34 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:196:21: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  print("Status: " + atoi(data) + "\r\n");
+                     ^~~~
+../src/helloworld.c:196:32: error: invalid operands to binary + (have 'char *' and 'char *')
+  print("Status: " + atoi(data) + "\r\n");
+        ~~~~~~~~~~~~~~~~~~~~~~~ ^
+make: *** [src/helloworld.o] Error 1
+15:50:56 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:196:21: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  print("Status: " + atoi((const char *)data) + "\r\n");
+                     ^~~~
+../src/helloworld.c:196:26: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  print("Status: " + atoi((const char *)data) + "\r\n");
+                          ^
+../src/helloworld.c:196:46: error: invalid operands to binary + (have 'char *' and 'char *')
+  print("Status: " + atoi((const char *)data) + "\r\n");
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+make: *** [src/helloworld.o] Error 1
+15:51:32 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:197:12: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  int num = atoi((const char *)data);
+            ^~~~
+../src/helloworld.c:197:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  int num = atoi((const char *)data);
+                 ^
+../src/helloworld.c:198:25: error: invalid operands to binary + (have 'char *' and 'char *')
+  print("Status: " + num + "\r\n");
+        ~~~~~~~~~~~~~~~~ ^
+make: *** [src/helloworld.o] Error 1
+15:51:52 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:197:12: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  int num = atoi((const char *)data);
+            ^~~~
+../src/helloworld.c:197:17: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  int num = atoi((const char *)data);
+                 ^
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10816	    304	   3208	  14328	   37f8	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:52:35 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:53:19 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:8: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  num = atoi((const char *)data);
+        ^~~~
+../src/helloworld.c:198:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  num = atoi((const char *)data);
+             ^
+../src/helloworld.c:205:13: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  num = atoi((const char *)data);
+             ^
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10932	    304	   3212	  14448	   3870	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:53:45 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:56:37 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:57:09 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:57:43 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12088	    304	   3208	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:59:08 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11704	    304	   3208	  15216	   3b70	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:00:08 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:00:47 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12088	    304	   3208	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+17:01:08 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:02:28 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:05:43 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:09:06 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:16:48 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:19:32 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:21:00 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+17:23:36 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+18:03:44 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+18:05:55 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+18:11:07 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:08:18 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:08:57 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:10:14 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:11:40 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:15:06 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:19:51 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+01:20:03 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:04:57 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:06:04 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:07:52 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:09:29 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:09:39 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:10:18 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:10:51 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:11:57 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:29:36 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+15:52:11 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:124:54: warning: passing argument 3 of 'XSpi_Transfer' from incompatible pointer type [-Wincompatible-pointer-types]
+     report = XSpi_Transfer(&TempSensor, WriteBuffer, &ReadBuffer, sizeof(WriteBuffer));
+                                                      ^
+In file included from ../src/helloworld.c:52:0:
+../../spi_1_bsp/microblaze_0/include/xspi.h:826:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ int XSpi_Transfer(XSpi *InstancePtr, u8 *SendBufPtr, u8 *RecvBufPtr,
+     ^~~~~~~~~~~~~
+../src/helloworld.c:136:12: warning: return makes integer from pointer without a cast [-Wint-conversion]
+     return ReadBuffer;
+            ^~~~~~~~~~
+../src/helloworld.c:136:12: warning: function returns address of local variable [-Wreturn-local-addr]
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:55:19 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:136:12: warning: return makes integer from pointer without a cast [-Wint-conversion]
+     return ReadBuffer;
+            ^~~~~~~~~~
+../src/helloworld.c:136:12: warning: function returns address of local variable [-Wreturn-local-addr]
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:55:32 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:136:12: warning: function returns address of local variable [-Wreturn-local-addr]
+     return ReadBuffer;
+            ^~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:200:7: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  data = Spi_Read(0x0B);
+       ^
+../src/helloworld.c:206:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   data = Spi_Read(0x0B);
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:55:49 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:136:12: warning: return from incompatible pointer type [-Wincompatible-pointer-types]
+     return &ReadBuffer;
+            ^~~~~~~~~~~
+../src/helloworld.c:136:12: warning: function returns address of local variable [-Wreturn-local-addr]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:200:7: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  data = Spi_Read(0x0B);
+       ^
+../src/helloworld.c:206:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   data = Spi_Read(0x0B);
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:55:52 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:136:12: warning: function returns address of local variable [-Wreturn-local-addr]
+     return ReadBuffer;
+            ^~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:200:7: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  data = Spi_Read(0x0B);
+       ^
+../src/helloworld.c:206:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   data = Spi_Read(0x0B);
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+15:57:50 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:117:22: error: expected expression before '{' token
+     wBuffer        = {InstructionFormat,address};
+                      ^
+../src/helloworld.c:124:41: error: 'WriteBuffer' undeclared (first use in this function); did you mean 'rBuffer'?
+     report = XSpi_Transfer(&TempSensor, WriteBuffer, ReadBuffer, sizeof(WriteBuffer));
+                                         ^~~~~~~~~~~
+                                         rBuffer
+../src/helloworld.c:124:41: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:124:54: error: 'ReadBuffer' undeclared (first use in this function); did you mean 'wBuffer'?
+     report = XSpi_Transfer(&TempSensor, WriteBuffer, ReadBuffer, sizeof(WriteBuffer));
+                                                      ^~~~~~~~~~
+                                                      wBuffer
+../src/helloworld.c:115:13: warning: unused variable 'InstructionFormat' [-Wunused-variable]
+     uint8_t InstructionFormat     = 0x0B;
+             ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:200:7: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  data = Spi_Read(0x0B);
+       ^
+../src/helloworld.c:206:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   data = Spi_Read(0x0B);
+        ^
+make: *** [src/helloworld.o] Error 1
+15:58:54 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:134:12: error: 'rBuffer' undeclared (first use in this function); did you mean 'ReadBuffer'?
+     return rBuffer;
+            ^~~~~~~
+            ReadBuffer
+../src/helloworld.c:134:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:7: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  data = Spi_Read(0x0B);
+       ^
+../src/helloworld.c:204:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   data = Spi_Read(0x0B);
+        ^
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+15:59:20 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Spi_Read':
+../src/helloworld.c:134:12: warning: function returns address of local variable [-Wreturn-local-addr]
+     return ReadBuffer;
+            ^~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:198:7: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  data = Spi_Read(0x0B);
+       ^
+../src/helloworld.c:204:8: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   data = Spi_Read(0x0B);
+        ^
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    304	   3212	  15600	   3cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:03:50 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12100	    304	   3212	  15616	   3d00	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:05:37 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:06:01 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12104	    304	   3208	  15616	   3d00	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:06:45 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:29:47 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:31:15 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:32:10 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:32:29 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:33:33 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:38:22 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+10:21:42 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:223:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     printf("data read: %d\n", data);
+                        ~^
+                        %ld
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64912 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+15:40:35 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:223:26: error: expected ')' before 'PRIu32'
+     printf("data read: %"PRIu32"\n", data);
+                          ^~~~~~
+../src/helloworld.c:223:24: warning: spurious trailing '%' in format [-Wformat=]
+     printf("data read: %"PRIu32"\n", data);
+                        ^
+../src/helloworld.c:222:14: warning: unused variable 'data' [-Wunused-variable]
+     uint32_t data = fpga_axi_read(addr);
+              ^~~~
+make: *** [src/helloworld.o] Error 1
+15:41:38 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64912 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+15:42:21 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64920 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+15:44:33 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+15:44:47 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+15:59:28 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+16:01:14 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+16:01:33 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+16:01:38 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+16:02:39 **** Auto Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+16:04:03 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: spi_1.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 64904 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [spi_1.elf] Error 1
+16:04:43 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27504	   1308	   3172	  31984	   7cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:05:23 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:08:58 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27504	   1308	   3172	  31984	   7cf0	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:10:02 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2912	    268	   3108	   6288	   1890	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:11:30 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12104	    304	   3208	  15616	   3d00	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:12:38 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:14:10 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../spi_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: spi_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../spi_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "spi_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: spi_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size spi_1.elf  |tee "spi_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2920	    268	   3108	   6296	   1898	spi_1.elf
+Finished building: spi_1.elf.size
+ 
+16:19:10 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:20:12 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
+16:20:59 **** Incremental Build of configuration Debug for project spi_1 ****
+make all 
+make: Nothing to be done for `all'.
